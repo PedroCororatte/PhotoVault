@@ -10,18 +10,22 @@ $images = glob($imageDirectory . "*.{jpg,jpeg,png,gif}", GLOB_BRACE);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+
     <title>PhotoVault</title>
 </head>
 
 <body>
     <div class="gallery">
         <?php
-            foreach($images as $image):?>
-        <a href="<?php echo htmlspecialchars($image); ?>" target="_blank">
+        foreach ($images as $image) : ?>
+            <a href="<?php echo htmlspecialchars($image); ?>" target="_blank">
                 <img src="<?php echo htmlspecialchars($image); ?>" alt="image">
-        <?php endforeach;?>
-    </div>
+            <?php endforeach; ?>
 
+    </div>
+    <a href="upload.php" class="upload-button">
+        Upload
+    </a>
 </body>
 
 </html>
