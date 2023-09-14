@@ -1,0 +1,25 @@
+#sidebar {
+    height: 100vh; /* Define a altura da barra lateral para cobrir toda a altura da janela de visualização */
+    position: fixed; /* Fixa a barra lateral no lugar */
+    top: 0; /* Alinha a barra lateral no topo da página */
+    left: 0; /* Alinha a barra lateral à esquerda da página */
+    width: 250px; /* Largura da barra lateral */
+    background-color: #333; /* Cor de fundo da barra lateral (escuro) */
+    padding: 20px; /* Espaçamento interno da barra lateral */
+}
+
+/* Estilo para o conteúdo principal */
+#main-content {
+    margin-left: 250px; /* Margem esquerda para evitar que o conteúdo principal seja coberto pela barra lateral */
+    padding: 20px;
+}
+
+.gallery img {
+    max-width: 100%; /* Largura máxima de 100% para redimensionar proporcionalmente */
+    height: auto; /* Altura automática para manter a proporção original */
+}
+#preview {
+    display: none;
+    max-width: 300px;
+    max-height: 300px;
+}
